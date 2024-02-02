@@ -41,7 +41,7 @@ export const App = () => {
         <p>{messages?.advice}</p>
         <img src="/pattern-divider-desktop.svg" alt="pattern divider" />
         <button onClick={handleRandomMessage}>
-          <img src="/public/icon-dice.svg" alt="dice icon" />
+          <img src="/icon-dice.svg" alt="dice icon" />
         </button>
       </article>
     </main>
