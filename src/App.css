@@ -1,0 +1,42 @@
+article {
+  position: relative;
+  max-width: 540px;
+  padding: 2.75rem 1.5rem 4rem;
+  margin-inline: 1rem;
+  text-align: center;
+  display: grid;
+  place-items: center;
+
+  border-radius: 0.5rem;
+  background-color: var(--clr-neutral-dark-grayish-blue);
+}
+
+article>*:where(:not(:first-child)) {
+  margin-top: 1rem;
+}
+
+article span {
+  font-size: var(--fs-smaller);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--clr-primary-neon-green);
+}
+
+article button {
+  position: absolute;
+  top: calc(100% - 2rem);
+  margin: 0;
+  border: none;
+  width: 4rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+  background-color: var(--clr-primary-neon-green);
+  transition: box-shadow 300ms ease-in-out;
+}
+
+article button:is(:hover, :focus) {
+  box-shadow: 0rem 0rem 2rem var(--clr-primary-neon-green);
+}

@@ -1,0 +1,98 @@
+/* ========== VARIABLES CSS ========== */
+:root {
+  /* ===== Colors ===== */
+  --clr-primary-light-cyan: hsl(193, 38%, 86%);
+  --clr-primary-neon-green: hsl(150, 100%, 66%);
+
+  --clr-neutral-grayish-blue: hsl(217, 19%, 38%);
+  --clr-neutral-dark-grayish-blue: hsl(217, 19%, 24%);
+  --clr-neutral-dark-blue: hsl(218, 23%, 16%);
+
+  /* ===== Font and Typography ===== */
+  --ff-default: "Manrope", sans-serif;
+
+  --fs-default: 1.5rem;
+  --fs-smaller: 0.5rem;
+  /* ===== Weights ===== */
+  --fw-extra-bold: 800;
+}
+
+@media screen and (min-width: 376px) {
+  :root {
+    --fs-default: 1.75rem;
+  }
+}
+
+/* ========== RESET CSS ========== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.2;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* ========== GENERAL STYLES ========== */
+body {
+  font-family: var(--ff-default);
+  font-size: var(--fs-default);
+  font-weight: var(--fw-extra-bold);
+
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+
+  color: var(--clr-primary-light-cyan);
+  background-color: var(--clr-neutral-dark-blue);
+}
